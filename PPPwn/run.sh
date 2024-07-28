@@ -95,19 +95,23 @@ fi
 PPPwnPS4="$CPPBIN --interface "$INTERFACE" --fw "${FIRMWAREVERSION//.}" --stage1 "$STAGE1F" --stage2 "$STAGE2F" --wait-after-pin $XFWAP --groom-delay $XFGD --buffer-size $XFBS $XFNW"
 fi
 
-echo -e "\n\n\033[36m _____  _____  _____                 
-|  __ \\|  __ \\|  __ \\
-| |__) | |__) | |__) |_      ___ __
-|  ___/|  ___/|  ___/\\ \\ /\\ / / '_ \\
-| |    | |    | |     \\ V  V /| | | |
-|_|    |_|    |_|      \\_/\\_/ |_| |_|\033[0m
+echo -e "\n\n\033[36m
+ _    _          _____ _  __  _____   _____ _  _        
+ | |  | |   /\   / ____| |/ / |  __ \ / ____| || |       
+ | |__| |  /  \ | |    | ' /  | |__) | (___ | || |_      
+ |  __  | / /\ \| |    |  <   |  ___/ \___ \|__   _|     
+ | |  | |/ ____ \ |____| . \  | |     ____) |  | |       
+ |_|  |_/_/    \_\_____|_|\_\ |_|    |_____/   |_|       
+   ___   ___   ___ ______ ___ ___   ___ ___   ___   ___  
+  / _ \ / _ \ / _ \____  / _ \__ \ / _ \__ \ / _ \ / _ \ 
+ | | | | (_) | (_) |  / / (_) | ) | (_) | ) | | | | (_) |
+ | | | |\__, |> _ <  / / \__, |/ / \__, |/ /| | | |\__, |
+ | |_| |  / /| (_) |/ /    / // /_   / // /_| |_| |  / / 
+  \___/  /_/  \___//_/    /_/|____| /_/|____|\___/  /_/  
+\033[0m
 \n\033[33mhttps://github.com/TheOfficialFloW/PPPwn\033[0m\n" | sudo tee /dev/tty1
 
-echo -e "\033[37mGoldhen by      : SiSTR0\033[0m" | sudo tee /dev/tty1
-echo -e "\033[37mHen by          : EchoStretch and BestPig\033[0m" | sudo tee /dev/tty1
-echo -e "\033[37mOriginal Script : Stooged\033[0m" | sudo tee /dev/tty1
-echo -e "\033[37mC++ Port        : xfangfang\033[0m" | sudo tee /dev/tty1
-echo -e "\033[37mMod By          : joe97tab\033[0m" | sudo tee /dev/tty1
+echo -e "\033[37mHACK      : CHEPGAME.NET\033[0m" | sudo tee /dev/tty1
 
 if [[ $((DELAYSTART)) -ge 1 ]] && [[ $((DELAYSTART)) -le 15 ]]; then
 coproc read -t $DELAYSTART && wait "$!" || true
